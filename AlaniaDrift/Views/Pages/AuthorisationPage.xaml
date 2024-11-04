@@ -8,7 +8,7 @@
       d:DesignHeight="508" d:DesignWidth="900"
       Title="AuthorisationPage" Background="#181D23">
 
-    <StackPanel  Margin="10">
+    <StackPanel  Margin="10" >
         <TextBlock Text="Авторизация" FontSize="30" HorizontalAlignment="Center"/>
         <Border Height="20"/>
         <TextBlock Text="Номер телефона:" HorizontalAlignment="Center"/>
