@@ -1,6 +1,8 @@
 ﻿using AlaniaDrift.AppData;
+using AlaniaDrift.Views.Windows;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -35,7 +37,9 @@ namespace AlaniaDrift.Views.Pages
             {
                 if (AuthorisationHelper.selectedUser.IsVerified == true)
                 {
-                    FrameHelper.selectedFrame.Navigate(new MenuPage());
+                    MainWindow mainWindow = new MainWindow();
+                    mainWindow.Show();
+                    Window.GetWindow(this).Close();
                 }
                 else
                 {

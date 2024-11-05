@@ -6,9 +6,41 @@
       xmlns:local="clr-namespace:AlaniaDrift.Views.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="508" d:DesignWidth="800"
-      Title="SignUpPage">
+      Title="SignUpPage" Background="#181D23">
 
-    <Grid>
+    <StackPanel  Margin="10" >
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" CanContentScroll="True" Height="508">
+            <StackPanel>
+                <Image Source="/Resources/Logo.png" Width="180"/>
+                <TextBlock Text="Зарегистрируйся в нашем приложенни Что бы начать кайфовать" HorizontalAlignment="Center"
+                           TextWrapping="Wrap" Width="470" Height="auto" TextAlignment="Center"/>
+                <Border Height="20"/>
+                <TextBlock Text="Фамилия:" HorizontalAlignment="Center"/>
+                <TextBox Name="LastnameTb" HorizontalAlignment="Center"/>
+                <Border Height="10" />
+                <TextBlock Text="Имя:" HorizontalAlignment="Center"/>
+                <TextBox Name="NameTb" HorizontalAlignment="Center"/>
+                <Border Height="10" />
+                <TextBlock Text="Отчество:" HorizontalAlignment="Center"/>
+                <TextBox Name="SurnameTB" HorizontalAlignment="Center"/>
+                <Border Height="10" />
+                <TextBlock Text="Номер телефона:" HorizontalAlignment="Center"/>
+                <TextBox Name="PhoneNUmberTb" MaxLength="11" HorizontalAlignment="Center" PreviewTextInput="PhoneNUmberTb_PreviewTextInput"/>
+                <Border Height="10" />
+                <TextBlock Text="Email:" HorizontalAlignment="Center"/>
+                <TextBox Name="EmailTb" HorizontalAlignment="Center"/>
+                <Border Height="10" />
+                <TextBlock Text="Пароль:" HorizontalAlignment="Center"/>
+                <PasswordBox Name="PassTB" MaxLength="18"/>
+                <Border Height="20" />
+                <Button Name="SignUpBtn" Click="SignUpBtn_Click">
+                    <Button.Content>
+                        <TextBlock Text="Зарегистрироваться" FontSize="18" Margin="0 15 0 0"/>
+                    </Button.Content>
+                </Button>
+                <Border Height="10" />
+            </StackPanel>
+        </ScrollViewer>
         
-    </Grid>
+    </StackPanel>
 </Page>
