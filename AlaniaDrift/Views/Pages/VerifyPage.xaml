@@ -1,0 +1,52 @@
+﻿<Page x:Class="AlaniaDrift.Views.Pages.VerifyPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AlaniaDrift.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="508" d:DesignWidth="800"
+      Title="VerifyPage">
+    <Page.Background>
+        <ImageBrush ImageSource="/Resources/Background.png"/>
+    </Page.Background>
+
+    <StackPanel HorizontalAlignment="Center">
+        <Border Height="10"/>
+        <StackPanel Orientation="Horizontal">
+            <Image Source="/Resources/Logo.png" Height="100"/>
+            <Border Width="10"/>
+            <TextBlock Text="Верификация личности нового клиента" Foreground="Black"
+                   TextWrapping="Wrap" Width="350" Height="auto" 
+                    FontSize="30" FontWeight="SemiBold" 
+                   FontStyle="Italic"/>
+        </StackPanel>
+        <Border Height="20"/>
+        <TextBlock Text="Загрузите паспорт разворот(2,3)" 
+                   Foreground="Black" FontSize="20" HorizontalAlignment="Center"/>
+        <Border Height="10"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="AddPassportBtn" Content="Выбрать" Click="AddPassportBtn_Click"/>
+            <Border Width="5"/>
+            <TextBlock Name="PassportTbl" Text="Файл выбран"  Foreground="Black" Visibility="Hidden"/>
+        </StackPanel>
+        <Border Height="10"/>
+        <TextBlock Text="Загрузите ИНН" HorizontalAlignment="Center"
+           Foreground="Black" FontSize="20"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="AddINNBtn" Content="Выбрать" Click="AddINNBtn_Click"/>
+            <Border Width="5"/>
+            <TextBlock Name="INNTbl" Text="Файл выбран" Foreground="Black" Visibility="Hidden"/>
+        </StackPanel>  
+        <Border Height="10"/>
+        <TextBlock Text="Загрузите СНИЛС" HorizontalAlignment="Center" 
+           Foreground="Black" FontSize="20"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="AddSnilsBtn" Content="Выбрать" Click="AddSnilsBtn_Click"/>
+            <Border Width="5"/>
+            <TextBlock Name="SNILSBTn" Text="Файл выбран" Foreground="Black" Visibility="Hidden"/>
+        </StackPanel>   
+        <Border Height="20"/>
+        <Button Name="AddBtn" Content="Далее" Click="AddBtn_Click"/>
+    </StackPanel>
+</Page>

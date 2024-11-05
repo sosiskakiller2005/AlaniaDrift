@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlaniaDrift.AppData;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Universitet.AppData;
 
 namespace AlaniaDrift.Views.Pages
 {
@@ -29,12 +31,22 @@ namespace AlaniaDrift.Views.Pages
 
         private void EntryBTn_Click(object sender, RoutedEventArgs e)
         {
-
+            if (AuthorisationHelper.Authorise(PhoneNUmberTb.Text+"          ", PassTB.Password))
+            {
+                if (AuthorisationHelper.selectedUser.IsVerified == true)
+                {
+                    FrameHelper.selectedFrame.Navigate(new MenuPage());
+                }
+                else
+                {
+                    FrameHelper.selectedFrame.Navigate(new VerifyPage());
+                }
+            }
         }
 
         private void SignUpBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameHelper.selectedFrame.Navigate(new SignUpPage());
         }
 
         private void PhoneNUmberTb_PreviewTextInput(object sender, TextCompositionEventArgs e)

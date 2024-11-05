@@ -15,6 +15,6 @@
         <Border Background="Black"/>
         <TextBlock Text="ALANIA DRIFT" Foreground="White" FontStyle="Italic" 
                    HorizontalAlignment="Center" FontSize="40"/>
-        <Frame Name="MainFrm" Grid.Row="1"/>
+        <Frame Name="MainFrm" Grid.Row="1" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
