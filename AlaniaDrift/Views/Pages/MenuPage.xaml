@@ -9,10 +9,10 @@
       Title="MenuPage">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width=".3*" />
-            <ColumnDefinition Width="1*" />
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
 
     </Grid>
 </Page>

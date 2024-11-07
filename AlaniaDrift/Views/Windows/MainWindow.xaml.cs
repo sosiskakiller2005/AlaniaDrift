@@ -27,5 +27,9 @@ namespace AlaniaDrift.Views.Windows
             FrameHelper.selectedFrame = MainFrm;
             MainFrm.Navigate(new MenuPage());
         }
+        private void CarSearchMI_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrm.Navigate(new CarSearchPage());
+        }
     }
 }

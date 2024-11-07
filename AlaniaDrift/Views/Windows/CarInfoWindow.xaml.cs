@@ -1,4 +1,4 @@
-﻿using AlaniaDrift.AppData;
+﻿using AlaniaDrift.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,22 +11,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AlaniaDrift.Views.Pages
+namespace AlaniaDrift.Views.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для MenuPage.xaml
+    /// Логика взаимодействия для CarInfoWindow.xaml
     /// </summary>
-    public partial class MenuPage : Page
+    public partial class CarInfoWindow : Window
     {
-        public MenuPage()
+        public CarInfoWindow(Car car)
         {
             InitializeComponent();
-            FrameHelper.selectedFrame.Navigate(new CarSearchPage());
+            CarGrid.DataContext = car;
         }
-
-        
     }
 }
