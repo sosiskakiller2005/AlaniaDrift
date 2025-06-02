@@ -100,11 +100,17 @@
     <Compile Include="Model\Model.cs">
       <DependentUpon>ALaniaDriftModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\Track.cs">
+      <DependentUpon>ALaniaDriftModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\User.cs">
       <DependentUpon>ALaniaDriftModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\AuthorisationPage.xaml.cs">
       <DependentUpon>AuthorisationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\BookingPage.xaml.cs">
+      <DependentUpon>BookingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\CarSearchPage.xaml.cs">
       <DependentUpon>CarSearchPage.xaml</DependentUpon>
@@ -114,6 +120,9 @@
     </Compile>
     <Compile Include="Views\Pages\SignUpPage.xaml.cs">
       <DependentUpon>SignUpPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\TracksPage.xaml.cs">
+      <DependentUpon>TracksPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\VerifyPage.xaml.cs">
       <DependentUpon>VerifyPage.xaml</DependentUpon>
@@ -197,6 +206,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Pages\BookingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\CarSearchPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -206,6 +219,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pages\SignUpPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\TracksPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

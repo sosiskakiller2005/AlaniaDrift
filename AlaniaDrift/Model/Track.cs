@@ -12,17 +12,19 @@ namespace AlaniaDrift.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Booking
+    public partial class Track
     {
-        public int Id { get; set; }
-        public int UserId { get; set; }
-        public int CarId { get; set; }
-        public System.DateTime StartDate { get; set; }
-        public System.DateTime EndDate { get; set; }
-        public Nullable<int> TrackId { get; set; }
+        public Track()
+        {
+            this.Booking = new HashSet<Booking>();
+        }
     
-        public virtual Car Car { get; set; }
-        public virtual User User { get; set; }
-        public virtual Track Track { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public System.DateTime BuidDate { get; set; }
+        public int Length { get; set; }
+        public byte[] Photo { get; set; }
+    
+        public virtual ICollection<Booking> Booking { get; set; }
     }
 }

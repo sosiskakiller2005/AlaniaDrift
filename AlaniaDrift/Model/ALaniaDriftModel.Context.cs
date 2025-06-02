@@ -32,5 +32,6 @@ namespace AlaniaDrift.Model
         public DbSet<Documents> Documents { get; set; }
         public DbSet<Model> Model { get; set; }
         public DbSet<User> User { get; set; }
+        public DbSet<Track> Track { get; set; }
     }
 }

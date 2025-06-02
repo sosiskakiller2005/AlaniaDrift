@@ -18,6 +18,9 @@
            HorizontalAlignment="Center" FontSize="40"/>
         <Menu VerticalAlignment="Center" Background="Black" Grid.Row="1">
             <MenuItem Header="Поиск авто" Name="CarSearchMI" Click="CarSearchMI_Click"/>
+            <MenuItem Header="Поиск трасс" Name="TrackCarSearchMI" Click="TrackCarSearchMI_Click"/>
+            <MenuItem Header="Бронь" Name="BookingMI" Click="BookingMI_Click"/>
+            <MenuItem Header="Профиль" Name="ProfileMI" Click="ProfileMI_Click"/>
         </Menu>
         <Frame Name="MainFrm" Grid.Row="2" NavigationUIVisibility="Hidden"/>
     </Grid>

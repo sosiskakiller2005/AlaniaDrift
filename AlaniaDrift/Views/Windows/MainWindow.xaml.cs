@@ -31,5 +31,21 @@ namespace AlaniaDrift.Views.Windows
         {
             MainFrm.Navigate(new CarSearchPage());
         }
+
+        private void TrackCarSearchMI_Click(object sender, RoutedEventArgs e)
+        {
+            TracksPage tracksPage = new TracksPage();
+            MainFrm.Navigate(tracksPage);
+        }
+
+        private void ProfileMI_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BookingMI_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrm.Navigate(new BookingPage());
+        }
     }
 }

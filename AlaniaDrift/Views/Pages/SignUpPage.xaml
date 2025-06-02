@@ -9,7 +9,7 @@
       Title="SignUpPage" Background="#181D23">
 
     <StackPanel  Margin="10" >
-        <ScrollViewer VerticalScrollBarVisibility="Hidden" CanContentScroll="True" Height="508">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" CanContentScroll="True" Height="850">
             <StackPanel>
                 <Image Source="/Resources/Logo.png" Width="180"/>
                 <TextBlock Text="Зарегистрируйся в нашем приложенни Что бы начать кайфовать" HorizontalAlignment="Center"

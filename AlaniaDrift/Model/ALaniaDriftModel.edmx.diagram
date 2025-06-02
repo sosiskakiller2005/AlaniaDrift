@@ -18,6 +18,8 @@
         <AssociationConnector Association="AlaniaDriftDbModel.FK_Model_Brand" ManuallyRouted="false" />
         <AssociationConnector Association="AlaniaDriftDbModel.FK_Car_Model" ManuallyRouted="false" />
         <AssociationConnector Association="AlaniaDriftDbModel.FK_Documents_User" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AlaniaDriftDbModel.Track" Width="1.5" PointX="0.75" PointY="8.875" />
+        <AssociationConnector Association="AlaniaDriftDbModel.FK_Booking_Track" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
