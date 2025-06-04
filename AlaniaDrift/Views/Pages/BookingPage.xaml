@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:AlaniaDrift.Views.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="508" d:DesignWidth="800"
-      Title="BookingPage">
+      Title="BookingPage" Background="Black">
 
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -23,26 +23,26 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel >
-                <TextBlock Text="Пользователь:" Height="50"/>
+                <TextBlock Text="Пользователь:" Height="50" Foreground="White"/>
                 <Border Height="10"/>
-                <TextBlock Text="Машина:" Height="50"/>
+                <TextBlock Text="Машина:" Height="50" Foreground="White"/>
                 <Border Height="10"/>
-                <TextBlock Text="Начало аренды:" Height="50"/>
+                <TextBlock Text="Начало аренды:" Height="50" Foreground="White"/>
                 <Border Height="10"/>
-                <TextBlock Text="Конец аренды:" Height="50"/>
+                <TextBlock Text="Конец аренды:" Height="50" Foreground="White"/>
                 <Border Height="10"/>
-                <TextBlock Text="Трек:" Height="50"/>
+                <TextBlock Text="Трек:" Height="50" Foreground="White"/>
             </StackPanel>
             <StackPanel Grid.Column="1">
-                <ComboBox Name="UserCmb"/>
+                <ComboBox Name="UserCmb" Style="{StaticResource rectangularComboBox}"/>
                 <Border Height="10"/>
-                <ComboBox Name="CarCmb"/>
+                <ComboBox Name="CarCmb" Style="{StaticResource rectangularComboBox}"/>
                 <Border Height="10"/>
-                <DatePicker Name="StartDp"/>
+                <DatePicker Name="StartDp" />
                 <Border Height="10"/>
                 <DatePicker Name="EndDp"/>
                 <Border Height="10"/>
-                <ComboBox Name="TrackCmb"/>
+                <ComboBox Name="TrackCmb" Style="{StaticResource rectangularComboBox}"/>
                 <Border Height="10"/>
                 <Button x:Name="AddBtn" Content="Забронировать" Click="AddBtn_Click" Width="250"/>
             </StackPanel>

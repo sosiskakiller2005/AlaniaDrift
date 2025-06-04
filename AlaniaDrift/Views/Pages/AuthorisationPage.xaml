@@ -9,13 +9,13 @@
       Title="AuthorisationPage" Background="#181D23">
 
     <StackPanel  Margin="10" >
-        <TextBlock Text="Авторизация" FontSize="30" HorizontalAlignment="Center"/>
+        <TextBlock Text="Авторизация" FontSize="30" HorizontalAlignment="Center" Foreground="White"/>
         <Border Height="20"/>
-        <TextBlock Text="Номер телефона:" HorizontalAlignment="Center"/>
+        <TextBlock Text="Номер телефона:" HorizontalAlignment="Center" Foreground="White"/>
         <Border Height="10" />
-        <TextBox Name="PhoneNUmberTb" MaxLength="11" HorizontalAlignment="Center" PreviewTextInput="PhoneNUmberTb_PreviewTextInput"/>
+        <TextBox Name="PhoneNUmberTb" MaxLength="11" HorizontalAlignment="Center" PreviewTextInput="PhoneNUmberTb_PreviewTextInput" />
         <Border Height="10" />
-        <TextBlock Text="Введите пароль:" HorizontalAlignment="Center"/>
+        <TextBlock Text="Введите пароль:" HorizontalAlignment="Center" Foreground="White"/>
         <PasswordBox Name="PassTB" MaxLength="18"/>
         <Border Height="20" />
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -23,7 +23,7 @@
             <Border Width="20" />
             <Button Name="SignUpBtn" Click="SignUpBtn_Click">
                 <Button.Content>
-                    <TextBlock Text="Зарегистрироваться" FontSize="18" Margin="0 15 0 0"/>
+                    <TextBlock Text="Зарегистрироваться" FontSize="18" Margin="0 15 0 0" Foreground="White"/>
                 </Button.Content>
             </Button>
         </StackPanel>
