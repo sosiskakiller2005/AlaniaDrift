@@ -38,14 +38,15 @@ namespace AlaniaDrift.Views.Windows
             MainFrm.Navigate(tracksPage);
         }
 
-        private void ProfileMI_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void BookingMI_Click(object sender, RoutedEventArgs e)
         {
             MainFrm.Navigate(new BookingPage());
+        }
+
+        private void BookingsMI_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrm.Navigate(new BookingsPage());
+
         }
     }
 }

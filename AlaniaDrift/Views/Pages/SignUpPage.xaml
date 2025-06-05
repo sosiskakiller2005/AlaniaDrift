@@ -9,28 +9,28 @@
       Title="SignUpPage" Background="#181D23">
 
     <StackPanel  Margin="10" >
-        <ScrollViewer VerticalScrollBarVisibility="Hidden" CanContentScroll="True" Height="850">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" CanContentScroll="True" Height="508">
             <StackPanel>
                 <Image Source="/Resources/Logo.png" Width="180"/>
-                <TextBlock Text="Зарегистрируйся в нашем приложенни Что бы начать кайфовать" HorizontalAlignment="Center"
+                <TextBlock Text="Зарегистрируйся в нашем приложенни Что бы начать кайфовать" HorizontalAlignment="Center" Foreground="White"
                            TextWrapping="Wrap" Width="470" Height="auto" TextAlignment="Center"/>
                 <Border Height="20"/>
-                <TextBlock Text="Фамилия:" HorizontalAlignment="Center"/>
+                <TextBlock Text="Фамилия:" HorizontalAlignment="Center" Foreground="White"/>
                 <TextBox Name="LastnameTb" HorizontalAlignment="Center"/>
                 <Border Height="10" />
-                <TextBlock Text="Имя:" HorizontalAlignment="Center"/>
+                <TextBlock Text="Имя:" HorizontalAlignment="Center" Foreground="White"/>
                 <TextBox Name="NameTb" HorizontalAlignment="Center"/>
                 <Border Height="10" />
-                <TextBlock Text="Отчество:" HorizontalAlignment="Center"/>
+                <TextBlock Text="Отчество:" HorizontalAlignment="Center" Foreground="White"/>
                 <TextBox Name="SurnameTB" HorizontalAlignment="Center"/>
                 <Border Height="10" />
-                <TextBlock Text="Номер телефона:" HorizontalAlignment="Center"/>
+                <TextBlock Text="Номер телефона:" HorizontalAlignment="Center" Foreground="White"/>
                 <TextBox Name="PhoneNUmberTb" MaxLength="11" HorizontalAlignment="Center" PreviewTextInput="PhoneNUmberTb_PreviewTextInput"/>
                 <Border Height="10" />
-                <TextBlock Text="Email:" HorizontalAlignment="Center"/>
+                <TextBlock Text="Email:" HorizontalAlignment="Center" Foreground="White"/>
                 <TextBox Name="EmailTb" HorizontalAlignment="Center"/>
                 <Border Height="10" />
-                <TextBlock Text="Пароль:" HorizontalAlignment="Center"/>
+                <TextBlock Text="Пароль:" HorizontalAlignment="Center" Foreground="White"/>
                 <PasswordBox Name="PassTB" MaxLength="18"/>
                 <Border Height="20" />
                 <Button Name="SignUpBtn" Click="SignUpBtn_Click">

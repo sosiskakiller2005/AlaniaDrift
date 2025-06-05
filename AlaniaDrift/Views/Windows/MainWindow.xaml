@@ -20,7 +20,7 @@
             <MenuItem Header="Поиск авто" Name="CarSearchMI" Click="CarSearchMI_Click" Foreground="White"/>
             <MenuItem Header="Поиск трасс" Name="TrackCarSearchMI" Click="TrackCarSearchMI_Click" Foreground="White"/>
             <MenuItem Header="Бронь" Name="BookingMI" Click="BookingMI_Click" Foreground="White"/>
-            <MenuItem Header="Профиль" Name="ProfileMI" Click="ProfileMI_Click" Foreground="White"/>
+            <MenuItem Header="Все брони" Name="BookingsMI" Click="BookingsMI_Click" Foreground="White"/>
         </Menu>
         <Frame Name="MainFrm" Grid.Row="2" NavigationUIVisibility="Hidden"/>
     </Grid>
